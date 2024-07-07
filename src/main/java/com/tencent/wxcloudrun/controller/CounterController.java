@@ -40,7 +40,7 @@ public class CounterController {
   ApiResponse get() {
     logger.info("/api/count get request");
     Optional<Counter> counter = counterService.getCounter(1);
-    Integer count = 0;
+    Integer count = 1;
     if (counter.isPresent()) {
       count = counter.get().getCount();
     }
